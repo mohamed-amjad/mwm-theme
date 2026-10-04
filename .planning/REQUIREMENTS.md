@@ -38,10 +38,11 @@
 
 ### Media (MEDIA)
 
-- [ ] **MEDIA-01**: All ~29 photos from the services PDF are extracted losslessly at native resolution (not page screenshots), renamed to ASCII, and catalogued in a manifest (page → service → sub-item → Arabic alt → size)
+- [ ] **MEDIA-01**: EVERY photo embedded in the services PDF (probe: 30 image objects — 29 JPEG copied losslessly, 1 non-JPEG converted) is extracted at native resolution (not page screenshots), renamed to ASCII, and catalogued in a manifest (page → service → sub-item → Arabic alt → size); manifest count must equal the PDF image count (logos/footer decorations excluded and listed as such). Client confirmed 2026-10-04: all PDF photos are to be used on the site
 - [ ] **MEDIA-02**: Photos are imported once into the media library with Arabic alt text and WebP sub-sizes; re-running the import creates no duplicates
-- [ ] **MEDIA-03**: Each service and sub-item is assigned its matching PDF photos; galleries are grouped by the three service lines
+- [ ] **MEDIA-03**: Each service and sub-item is assigned its matching PDF photos; galleries are grouped by the three service lines; a coverage check proves every extracted photo appears on at least one public page (zero unused PDF photos)
 - [ ] **MEDIA-04**: Layouts never upscale the ≤1280 px source photos into soft full-bleed images (split/inset hero compositions)
+- [ ] **MEDIA-05**: Outside the PDF service content, sections (hero backgrounds, about, CTA bands, industries, page heroes) may use high-quality external photos (client approved 2026-10-04) — only free-licensed sources (Unsplash / Pexels license), downloaded and imported into the media library (never hotlinked), source + license recorded in the content ledger, never presented as MWM's own projects (the works gallery stays PDF-only)
 
 ### Leads & Conversion (LEAD)
 
@@ -98,10 +99,10 @@
 ### Pages & Seeding (PAGE)
 
 - [ ] **PAGE-01**: Pages exist and are built with MWM widgets: الرئيسية، من نحن، خدماتنا، 3 service detail pages، معرض الأعمال، التراخيص والاعتمادات، الفروع، طلب عرض سعر / معاينة، تواصل معنا، سياسة الخصوصية، 404
-- [ ] **PAGE-02**: All service content from the client brief and the services PDF (3 lines, ~18 sub-items, licensing statements, spare parts, maintenance contracts) appears on the site in polished Arabic
+- [ ] **PAGE-02**: All service content from the client brief and the services PDF (3 lines, ~18 sub-items, licensing statements, spare parts, maintenance contracts) appears on the site in polished Arabic; a content-coverage checklist maps every sentence of the brief and every PDF page (1–17) to where it appears on the site — nothing omitted (client: "متنساش محتوى ولا صور")
 - [ ] **PAGE-03**: Header/footer templates, menus, Kit globals and page roles are created automatically by an idempotent seeder (`wp mwm seed`) that never overwrites client edits
 - [ ] **PAGE-04**: URLs use short Latin slugs (e.g. `/services/rehabilitation/`, `/quote/`)
-- [ ] **PAGE-05**: A client confirmation checklist (entity type شركة/مؤسسة, Solenoid spelling, photo ownership & originals, license data, branch addresses, number labels, FAQ answers, CR/VAT/socials) is tracked and applied before seeding closes
+- [ ] **PAGE-05**: A client confirmation checklist (entity type شركة/مؤسسة, Solenoid spelling, higher-res originals (optional — PDF photos already approved for use), license data, branch addresses, number labels, FAQ answers, CR/VAT/socials) is tracked and applied before seeding closes
 
 ### SEO (SEO)
 
@@ -197,6 +198,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MEDIA-01 | Phase 2 | Pending |
 | MEDIA-02 | Phase 6 | Pending |
 | MEDIA-03 | Phase 6 | Pending |
+| MEDIA-05 | Phase 6 | Pending |
 | MEDIA-04 | Phase 5 | Pending |
 | LEAD-01 | Phase 3 | Pending |
 | LEAD-02 | Phase 3 | Pending |
@@ -262,10 +264,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HAND-02 | Phase 7 | Pending |
 
 **Coverage:**
-- v1 requirements: 86 total
-- Mapped to phases: 86
+- v1 requirements: 87 total
+- Mapped to phases: 87
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-10-04*
-*Last updated: 2026-10-04 after roadmap creation (traceability mapped)*
+*Last updated: 2026-10-04 after client media decisions (all PDF photos/content mandatory; external free-licensed photos allowed elsewhere — MEDIA-05 added)*

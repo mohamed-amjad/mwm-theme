@@ -23,7 +23,7 @@ See: .planning/PROJECT.md (updated 2026-10-04)
 Phase: 1 of 7 (Foundation & Environment Baseline)
 Plan: 0 of TBD in current phase
 Status: Ready to plan
-Last activity: 2026-10-04 — Roadmap created (7 phases, 86/86 v1 requirements mapped)
+Last activity: 2026-10-04 — Roadmap created (7 phases); client media decisions recorded (all PDF photos/content mandatory; external free-licensed photos allowed elsewhere); 87/87 v1 requirements mapped
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -64,7 +64,7 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Phase 1→6]: Client confirmation checklist (entity type مؤسسة/شركة, Solenoid spelling, photo ownership/originals, license data, branch addresses, WhatsApp number labels, FAQ answers, CR/VAT/socials) starts in Phase 1 and must be resolved before Phase 6 closes
+- [Phase 1→6]: Client confirmation checklist (entity type مؤسسة/شركة, Solenoid spelling, higher-res originals (optional; PDF photos approved for use 2026-10-04), license data, branch addresses, WhatsApp number labels, FAQ answers, CR/VAT/socials) starts in Phase 1 and must be resolved before Phase 6 closes
 - [Phase 1→7]: Production host facts (PHP/MySQL versions, AVIF, cache plugin, domain mailbox/SMTP, SPF/DKIM) to collect in Phase 1, act on in Phase 7
 - [Phase 4]: Elementor [VERIFY] internals must be spiked against installed 4.3.3 before scaling widgets
 - [Phase 7]: Lighthouse ≥ 90 depends on Elementor's jQuery runtime floor; fallback ladder in research/STACK.md

@@ -44,7 +44,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Admin assigns page roles (home, about, services, gallery, licenses, branches, quote, contact, privacy); renaming an assigned page does not break role-based links.
   3. Admin creates and orders service records (with a public Latin URL under `/services/` that opens in Elementor and falls back to PHP), sub-service items (no public page), branches, licenses and FAQs from the dashboard, with ACF fields registered in PHP under stable keys.
   4. When a license's expiry date is within the configured number of days, the admin sees a dashboard notice.
-  5. `tools/extract-pdf-images.mjs` produces about 29 losslessly extracted, ASCII-named photos plus a manifest (page → service line → sub-item → Arabic alt → pixel size → own-photo flag) that the client can review for resolution and ownership.
+  5. `tools/extract-pdf-images.mjs` extracts EVERY photo embedded in the services PDF (30 image objects; 29 JPEG lossless + 1 converted) as ASCII-named files plus a manifest (page → service line → sub-item → Arabic alt → pixel size); manifest count equals the PDF image count. Client confirmed all PDF photos are to be used.
 **Plans**: TBD
 **UI hint**: yes
 
@@ -91,11 +91,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 ### Phase 6: Content, Media & Page Seeding
 **Goal**: One idempotent command builds the complete Arabic site (photos, records, Kit, templates, pages, service singles, menus) from grounded content, with the client's confirmations applied and every claim traceable to a source.
 **Depends on**: Phase 5
-**Requirements**: MEDIA-02, MEDIA-03, PAGE-01, PAGE-02, PAGE-03, PAGE-04, PAGE-05, TRUST-01, TRUST-05
+**Requirements**: MEDIA-02, MEDIA-03, MEDIA-05, PAGE-01, PAGE-02, PAGE-03, PAGE-04, PAGE-05, TRUST-01, TRUST-05
 **Success Criteria** (what must be TRUE):
   1. Running `wp mwm seed` on a fresh DB produces الرئيسية، من نحن، خدماتنا، 3 service detail pages، معرض الأعمال، التراخيص والاعتمادات، الفروع، طلب عرض سعر / معاينة، تواصل معنا، سياسة الخصوصية and 404, built with «MWM» widgets on short Latin slugs (e.g. `/services/rehabilitation/`, `/quote/`), plus header/footer templates, menus, Kit globals and page roles.
   2. Running the seeder again creates no duplicate media, records or pages and does not overwrite anything the client edited.
-  3. Visitor finds all three service lines, about 18 sub-items, licensing statements, spare parts and maintenance contracts from the brief and services PDF in polished Arabic, each illustrated with its matching PDF photos (Arabic alt, WebP sub-sizes), and galleries grouped by the three service lines.
+  3. Visitor finds all three service lines, about 18 sub-items, licensing statements, spare parts and maintenance contracts from the brief and services PDF in polished Arabic, each illustrated with its matching PDF photos (Arabic alt, WebP sub-sizes), and galleries grouped by the three service lines. Coverage checks prove zero omissions: every PDF photo appears on at least one public page, and every brief sentence and PDF page (1–17) maps to a place on the site.
   4. NCEC licensing appears on the home strip, licenses page, the rehabilitation and filters service pages and the footer, and never on ventilation. No invented numbers, years, clients, projects or coordinates appear; `docs/content-sources.md` traces every claim.
   5. The client confirmation checklist (entity type, Solenoid spelling, photo ownership/originals, license data, branch addresses, number labels, FAQ answers, CR/VAT/socials) is tracked and its answers are applied, with unknowns shipped as empty hidden fields.
 **Plans**: TBD

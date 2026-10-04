@@ -152,6 +152,8 @@ A facility owner in Saudi Arabia lands on the site from any device, immediately 
 | Grounded professional copywriting (no invented claims) | Client choice | — Pending |
 | Horizontal layers build order (foundation → data → widgets → pages → QA) | Client choice; mirrors Al-Masa delivery | — Pending |
 | Gallery organized by the three service lines from PDF photos (no named projects yet) | No project names/clients provided | — Pending |
+| ALL services-PDF photos and ALL its content are used on the site — zero omissions, verified by photo and content coverage checks | Client confirmed 2026-10-04: «استخدم الصور اللي في الـ PDF، متنساش محتوى ولا صور منهم، مهم جداً» — also resolves the photo-ownership question | ✓ Confirmed |
+| Rest of the site may use attractive external photos (free-licensed, imported locally, logged in the content ledger); works gallery and service proof stay PDF-only | Client approved 2026-10-04: «باقي الموقع ممكن تستعمل صور شكلها حلو من برا عادي» — also solves the ≤1280 px PDF resolution limit for full-width heroes | ✓ Confirmed |
 | Theme slug `mwm`, prefix `mwm_`, text domain `mwm` | Short, brand-aligned | — Pending |
 
 ## Evolution
