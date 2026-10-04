@@ -1,0 +1,18 @@
+﻿# Only the mwm theme, planning and project docs are versioned.
+# WordPress core, plugins, uploads and wp-config.php stay out.
+/*
+!/.gitignore
+!/.gitattributes
+!/PROJECT_RULES.md
+!/README.md
+!/AGENTS.md
+!/.planning/
+!/.cursor/
+!/docs/
+/docs/source/*.pdf
+
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/mwm/
