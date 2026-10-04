@@ -174,12 +174,98 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
+| FND-01 | Phase 1 | Pending |
+| FND-02 | Phase 1 | Pending |
+| FND-03 | Phase 1 | Pending |
+| FND-04 | Phase 1 | Pending |
+| FND-05 | Phase 1 | Pending |
+| FND-06 | Phase 1 | Pending |
+| FND-07 | Phase 1 | Pending |
+| FND-08 | Phase 1 | Pending |
+| SET-01 | Phase 2 | Pending |
+| SET-02 | Phase 3 | Pending |
+| SET-03 | Phase 2 | Pending |
+| SET-04 | Phase 4 | Pending |
+| SET-05 | Phase 2 | Pending |
+| SET-06 | Phase 3 | Pending |
+| DATA-01 | Phase 2 | Pending |
+| DATA-02 | Phase 2 | Pending |
+| DATA-03 | Phase 2 | Pending |
+| DATA-04 | Phase 2 | Pending |
+| DATA-05 | Phase 2 | Pending |
+| DATA-06 | Phase 2 | Pending |
+| MEDIA-01 | Phase 2 | Pending |
+| MEDIA-02 | Phase 6 | Pending |
+| MEDIA-03 | Phase 6 | Pending |
+| MEDIA-04 | Phase 5 | Pending |
+| LEAD-01 | Phase 3 | Pending |
+| LEAD-02 | Phase 3 | Pending |
+| LEAD-03 | Phase 3 | Pending |
+| LEAD-04 | Phase 3 | Pending |
+| LEAD-05 | Phase 3 | Pending |
+| LEAD-06 | Phase 3 | Pending |
+| LEAD-07 | Phase 3 | Pending |
+| LEAD-08 | Phase 3 | Pending |
+| LEAD-09 | Phase 3 | Pending |
+| LEAD-10 | Phase 3 | Pending |
+| LEAD-11 | Phase 3 | Pending |
+| LEAD-12 | Phase 3 | Pending |
+| TRUST-01 | Phase 6 | Pending |
+| TRUST-02 | Phase 5 | Pending |
+| TRUST-03 | Phase 5 | Pending |
+| TRUST-04 | Phase 2 | Pending |
+| TRUST-05 | Phase 6 | Pending |
+| EDIT-01 | Phase 5 | Pending |
+| EDIT-02 | Phase 4 | Pending |
+| EDIT-03 | Phase 4 | Pending |
+| EDIT-04 | Phase 4 | Pending |
+| EDIT-05 | Phase 4 | Pending |
+| EDIT-06 | Phase 5 | Pending |
+| EDIT-07 | Phase 4 | Pending |
+| SECT-01 | Phase 5 | Pending |
+| SECT-02 | Phase 5 | Pending |
+| SECT-03 | Phase 5 | Pending |
+| SECT-04 | Phase 4 | Pending |
+| SECT-05 | Phase 4 | Pending |
+| SECT-06 | Phase 5 | Pending |
+| SECT-07 | Phase 5 | Pending |
+| SECT-08 | Phase 5 | Pending |
+| SECT-09 | Phase 5 | Pending |
+| SECT-10 | Phase 5 | Pending |
+| SECT-11 | Phase 5 | Pending |
+| SECT-12 | Phase 5 | Pending |
+| SECT-13 | Phase 5 | Pending |
+| SECT-14 | Phase 5 | Pending |
+| SECT-15 | Phase 5 | Pending |
+| SECT-16 | Phase 5 | Pending |
+| PAGE-01 | Phase 6 | Pending |
+| PAGE-02 | Phase 6 | Pending |
+| PAGE-03 | Phase 6 | Pending |
+| PAGE-04 | Phase 6 | Pending |
+| PAGE-05 | Phase 6 | Pending |
+| SEO-01 | Phase 7 | Pending |
+| SEO-02 | Phase 7 | Pending |
+| SEO-03 | Phase 7 | Pending |
+| SEO-04 | Phase 7 | Pending |
+| SEO-05 | Phase 7 | Pending |
+| PERF-01 | Phase 7 | Pending |
+| PERF-02 | Phase 7 | Pending |
+| PERF-03 | Phase 7 | Pending |
+| PERF-04 | Phase 7 | Pending |
+| A11Y-01 | Phase 7 | Pending |
+| A11Y-02 | Phase 7 | Pending |
+| A11Y-03 | Phase 5 | Pending |
+| A11Y-04 | Phase 7 | Pending |
+| DSGN-01 | Phase 5 | Pending |
+| DSGN-02 | Phase 5 | Pending |
+| HAND-01 | Phase 7 | Pending |
+| HAND-02 | Phase 7 | Pending |
 
 **Coverage:**
 - v1 requirements: 86 total
-- Mapped to phases: 0
-- Unmapped: 86 ⚠️
+- Mapped to phases: 86
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-10-04*
-*Last updated: 2026-10-04 after initial definition*
+*Last updated: 2026-10-04 after roadmap creation (traceability mapped)*
