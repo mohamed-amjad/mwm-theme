@@ -21,11 +21,13 @@ A facility owner in Saudi Arabia lands on the site from any device, immediately 
 
 - ✓ WordPress core installed in `C:\xampp\htdocs\mwmpower-ksa` (XAMPP, Windows) — existing
 - ✓ `wp-config.php` connected to MySQL database `mwmpower-ksa` (root / no password, prefix `wp_`, `WP_DEBUG` + log on, display off) — initialization
+- ✓ WordPress installed by the client on the DB: site title `MWM`, locale `ar`, permalinks `/%postname%/`, admin email `mwmksa92@gmail.com`, 1 admin user; active theme still `twentytwentyfive`, no plugins yet — existing
+- ✓ Media already uploaded by the client (2026/10): logo PNG (attachment 6, `WhatsApp-Image-2026-10-03-at-1.53.52-PM-1.png`), logo on white canvas (7 jpeg / 8 png), Site Icon set (attachment 9, cropped), services PDF (10, `خدمات-المؤسسة.pdf`), visual identity PDF (11, `mwm-logo-visual-identity.pdf`) — identical (MD5) to `docs/source/*.pdf` — existing
 
 ### Active
 
 - [ ] Custom theme `mwm` (prefix `mwm_`, text domain `mwm`), RTL-first, translation-ready for future English
-- [ ] WordPress installed on the DB with Arabic locale, Elementor Free + ACF Free installed and activated
+- [ ] Elementor Free + ACF Free installed and activated; theme `mwm` activated; existing logo attachment reused as Site Logo (no duplicate uploads)
 - [ ] Design tokens from the visual identity mapped to CSS variables AND Elementor Kit (global colors + typography)
 - [ ] Custom Elementor widget per section (category «MWM») — every text, image, link, color, typography, spacing and visibility controllable from Elementor
 - [ ] Global site settings in one place (phones, WhatsApp numbers, email, social links, CR/VAT, license numbers, branch data) feeding header, footer, floating buttons, schema
