@@ -1,0 +1,90 @@
+{
+ "height": 11775,
+ "overflow": false,
+ "blocks": [
+  {
+   "tag": "header",
+   "cls": "mwm-header",
+   "h": 85,
+   "text": "MWM للمعالجة البيئية والحلول المستدامة الرئيسية من نحن خدماتنا معرض الأعمال تواصل معنا 057 382 5004 اتصل بنا اطلب عرض سعر"
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-hero mwm-dark",
+   "h": 900,
+   "text": "MWM للمعالجة البيئية والحلول المستدامة خبراء جودة الهواء وإعادة التأهيل البيئي في المملكة مؤسسة سعودية مرخّصة من المركز الوطني للرقابة على الالتزام البيئي، ننفّ"
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-features mwm-features--strip",
+   "h": 140,
+   "text": "ترخيص رسمي من المركز الوطني للرقابة على الالتزام البيئي إعادة التأهيل الكسارات والمحاجر والمواقع التعدينية فلاتر كبح الملوثات تصنيع وتركيب وصيانة وقطع غيار أنظم"
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-services mwm-section--tint",
+   "h": 1155,
+   "text": "خدماتنا خدمات متخصصة لبيئة عمل أنظف خدمات بيئية مرخّصة ومنفّذة بفرق ميدانية ومهندسين مختصين، من خطط إعادة التأهيل إلى فلاتر الغبار وأنظمة التهوية. إعادة التأهيل"
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-split mwm-split--media-end",
+   "h": 746,
+   "text": "من نحن شريك بيئي سعودي من الخطة حتى التشغيل MWM للمعالجة البيئية والحلول المستدامة شركة خدمات بيئية سعودية لها فروع في منطقة جازان والرياض والدمام، وتعمل في جمي"
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-features mwm-features--grid mwm-section--green",
+   "h": 1022,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-features mwm-features--tiles",
+   "h": 1022,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-process  mwm-section--tint",
+   "h": 1022,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-gallery",
+   "h": 1022,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-licenses mwm-licenses--cards mwm-section--tint",
+   "h": 1022,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-branches",
+   "h": 1022,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-faq mwm-section--tint",
+   "h": 1022,
+   "text": ""
+  },
+  {
+   "tag": "section",
+   "cls": "mwm-section mwm-section--tight mwm-cta mwm-cta--deep",
+   "h": 944,
+   "text": ""
+  },
+  {
+   "tag": "footer",
+   "cls": "mwm-footer",
+   "h": 800,
+   "text": ""
+  }
+ ]
+}

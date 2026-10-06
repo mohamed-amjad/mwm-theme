@@ -1,0 +1,239 @@
+/* Base: reset, typography, links, focus, utilities. Logical properties only (RTL-first). */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	scroll-padding-block-start: calc(var(--mwm-header-h) + 1rem);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: var(--mwm-font-body);
+	font-size: var(--mwm-fs-body);
+	line-height: var(--mwm-lh-body);
+	color: var(--mwm-ink);
+	background: var(--mwm-white);
+	font-synthesis: none;
+	letter-spacing: 0;
+	font-variant-numeric: lining-nums;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 var(--mwm-s-4);
+	font-family: var(--mwm-font-display);
+	font-weight: 700;
+	line-height: var(--mwm-lh-heading);
+	color: var(--mwm-heading);
+	letter-spacing: 0;
+	text-wrap: balance;
+}
+
+h1 { font-size: var(--mwm-fs-h1); }
+h2 { font-size: var(--mwm-fs-h2); }
+h3 { font-size: var(--mwm-fs-h3); font-weight: 600; }
+h4 { font-size: var(--mwm-fs-h4); font-weight: 600; }
+
+p {
+	margin: 0 0 var(--mwm-s-4);
+	text-wrap: pretty;
+}
+
+p:last-child {
+	margin-block-end: 0;
+}
+
+a {
+	color: var(--mwm-link);
+	text-decoration-thickness: 1px;
+	text-underline-offset: .25em;
+	transition: color var(--mwm-dur) var(--mwm-ease);
+}
+
+/* Links inside running text stay underlined (WCAG 1.4.1); beats Elementor's `.elementor a { text-decoration: none }`. */
+:is(.mwm-prose, .mwm-faq__answer, .mwm-item__text, .mwm-field__hint, .mwm-page-content) a:not([class]) {
+	text-decoration-line: underline;
+}
+
+a:hover {
+	color: var(--mwm-deep);
+}
+
+img,
+svg,
+video {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+img {
+	border-style: none;
+}
+
+ul,
+ol {
+	margin: 0 0 var(--mwm-s-4);
+	padding-inline-start: 1.25em;
+}
+
+strong,
+b {
+	font-weight: 600;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+bdi[dir="ltr"] {
+	unicode-bidi: isolate;
+	font-variant-numeric: tabular-nums;
+}
+
+::selection {
+	background: var(--mwm-leaf);
+	color: var(--mwm-deep);
+}
+
+:focus-visible {
+	outline: 3px solid var(--mwm-focus);
+	outline-offset: 3px;
+	border-radius: 4px;
+}
+
+.mwm-on-dark :focus-visible,
+.mwm-dark :focus-visible {
+	outline-color: var(--mwm-focus-on-dark);
+}
+
+.screen-reader-text,
+.mwm-sr {
+	position: absolute !important;
+	inline-size: 1px;
+	block-size: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+.mwm-skip {
+	position: fixed;
+	inset-block-start: var(--mwm-s-3);
+	inset-inline-start: var(--mwm-s-3);
+	z-index: 1000;
+	padding: var(--mwm-s-3) var(--mwm-s-5);
+	border-radius: var(--mwm-r-sm);
+	background: var(--mwm-deep);
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+	transform: translateY(-200%);
+	transition: transform var(--mwm-dur) var(--mwm-ease);
+}
+
+.mwm-skip:focus {
+	transform: none;
+	color: #fff;
+}
+
+.mwm-container {
+	inline-size: 100%;
+	max-inline-size: calc(var(--mwm-container) + var(--mwm-gutter) * 2);
+	margin-inline: auto;
+	padding-inline: var(--mwm-gutter);
+}
+
+.mwm-container--narrow {
+	max-inline-size: calc(var(--mwm-container-narrow) + var(--mwm-gutter) * 2);
+}
+
+.mwm-icon {
+	inline-size: 1.25em;
+	block-size: 1.25em;
+	flex: none;
+}
+
+/* Arrows point toward the reading direction's end. */
+[dir="ltr"] .mwm-icon--arrow {
+	transform: scaleX(-1);
+}
+
+.mwm-editor-empty {
+	padding: var(--mwm-s-6);
+	border: 2px dashed var(--mwm-line-strong);
+	border-radius: var(--mwm-r);
+	background: var(--mwm-surface);
+	color: var(--mwm-ink);
+	text-align: center;
+	font-size: var(--mwm-fs-small);
+}
+
+/* Prose (page content, service body). */
+.mwm-prose {
+	font-size: var(--mwm-fs-lead);
+	line-height: 1.9;
+}
+
+.mwm-prose > * + * {
+	margin-block-start: var(--mwm-s-4);
+}
+
+.mwm-prose h2,
+.mwm-prose h3 {
+	margin-block-start: var(--mwm-s-10);
+}
+
+.mwm-prose ul {
+	padding-inline-start: 0;
+	list-style: none;
+}
+
+.mwm-prose ul li {
+	position: relative;
+	padding-inline-start: 1.9em;
+	margin-block-end: var(--mwm-s-2);
+}
+
+.mwm-prose ul li::before {
+	content: "";
+	position: absolute;
+	inset-inline-start: 0;
+	inset-block-start: .55em;
+	inline-size: .9em;
+	block-size: .9em;
+	border-radius: 0 50% 0 50%;
+	background: var(--mwm-leaf);
+}

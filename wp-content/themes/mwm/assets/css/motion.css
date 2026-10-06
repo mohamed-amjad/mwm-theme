@@ -1,0 +1,90 @@
+/* Motion: reveal-on-scroll (only when JS runs and the visitor allows motion). */
+
+@media (prefers-reduced-motion: no-preference) {
+	.mwm-js [data-mwm-reveal] {
+		opacity: 0;
+		transform: translateY(26px);
+		/* Outranks the cards' own `transition`, so it also carries their hover properties (without the stagger delay). */
+		transition:
+			opacity var(--mwm-dur-slow) var(--mwm-ease-out),
+			transform var(--mwm-dur-slow) var(--mwm-ease-out),
+			translate var(--mwm-dur) var(--mwm-ease),
+			box-shadow var(--mwm-dur) var(--mwm-ease),
+			border-color var(--mwm-dur) var(--mwm-ease);
+		transition-delay: var(--mwm-delay, 0s), var(--mwm-delay, 0s), 0s, 0s, 0s;
+	}
+
+	.mwm-js [data-mwm-reveal].is-in {
+		opacity: 1;
+		transform: none;
+	}
+
+	/* Transform only: the hero heading is often the LCP element, so it never starts transparent. */
+	.mwm-hero__content > * {
+		animation: mwm-lift .9s var(--mwm-ease-out) both;
+	}
+
+	.mwm-hero__content > :nth-child(2) { animation-delay: .08s; }
+	.mwm-hero__content > :nth-child(3) { animation-delay: .16s; }
+	.mwm-hero__content > :nth-child(4) { animation-delay: .24s; }
+	.mwm-hero__content > :nth-child(5) { animation-delay: .32s; }
+
+	/* Slow zoom-out while a slide is showing; the outgoing slide snaps back only once it has faded. */
+	.mwm-hero__slide img {
+		transform: scale(1.08);
+		transition: transform 0s 1.2s;
+	}
+
+	.mwm-hero__slide.is-active img {
+		transform: none;
+		transition: transform calc(var(--mwm-slide-ms, 6s) + 1.2s) var(--mwm-ease-out);
+	}
+	.mwm-hero__leaf--a {
+		animation: mwm-float 7s var(--mwm-ease) infinite alternate;
+	}
+
+	.mwm-hero__leaf--b {
+		animation: mwm-float 9s var(--mwm-ease) infinite alternate-reverse;
+	}
+
+	@supports (animation-timeline: view()) {
+		.mwm-split__frame:not(.mwm-split__frame--sub) img {
+			animation: mwm-parallax linear both;
+			animation-timeline: view();
+			animation-range: cover;
+		}
+	}
+}
+
+@keyframes mwm-lift {
+	from {
+		transform: translateY(18px);
+	}
+}
+
+@keyframes mwm-float {
+	to {
+		transform: translate(10px, -14px) rotate(8deg);
+	}
+}
+
+@keyframes mwm-parallax {
+	from {
+		transform: scale(1.12) translateY(-3%);
+	}
+
+	to {
+		transform: scale(1.12) translateY(3%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: .01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: .01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

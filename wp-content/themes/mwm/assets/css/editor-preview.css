@@ -1,0 +1,25 @@
+/* Elementor preview: show everything immediately and keep the header out of the way. */
+
+.elementor-editor-active [data-mwm-reveal],
+.elementor-editor-preview [data-mwm-reveal] {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+.elementor-editor-active .mwm-header {
+	position: relative !important;
+}
+
+.elementor-editor-active .mwm-hero,
+.elementor-editor-active .mwm-page-hero {
+	padding-block-start: clamp(3rem, 2rem + 4vw, 5rem);
+}
+
+.elementor-editor-active .mwm-float,
+.elementor-editor-active .mwm-bar {
+	display: none !important;
+}
+
+.elementor-editor-active .elementor-widget-empty .mwm-editor-empty {
+	margin: var(--mwm-s-6);
+}

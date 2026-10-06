@@ -1,0 +1,288 @@
+[
+	{
+		"page": 1,
+		"file": "p01-i1.png",
+		"width": 1192,
+		"height": 1685,
+		"pages": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			15,
+			16,
+			17
+		]
+	},
+	{
+		"page": 1,
+		"file": "p01-i2.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			1
+		]
+	},
+	{
+		"page": 2,
+		"file": "p02-i1.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			2
+		]
+	},
+	{
+		"page": 2,
+		"file": "p02-i2.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			2
+		]
+	},
+	{
+		"page": 3,
+		"file": "p03-i1.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			3
+		]
+	},
+	{
+		"page": 3,
+		"file": "p03-i2.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			3
+		]
+	},
+	{
+		"page": 4,
+		"file": "p04-i1.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			4
+		]
+	},
+	{
+		"page": 4,
+		"file": "p04-i2.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			4
+		]
+	},
+	{
+		"page": 5,
+		"file": "p05-i1.jpg",
+		"width": 1600,
+		"height": 1200,
+		"pages": [
+			5
+		]
+	},
+	{
+		"page": 6,
+		"file": "p06-i1.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			6
+		]
+	},
+	{
+		"page": 6,
+		"file": "p06-i2.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			6
+		]
+	},
+	{
+		"page": 7,
+		"file": "p07-i1.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			7
+		]
+	},
+	{
+		"page": 7,
+		"file": "p07-i2.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			7
+		]
+	},
+	{
+		"page": 8,
+		"file": "p08-i1.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			8
+		]
+	},
+	{
+		"page": 8,
+		"file": "p08-i2.jpg",
+		"width": 1280,
+		"height": 960,
+		"pages": [
+			8
+		]
+	},
+	{
+		"page": 9,
+		"file": "p09-i1.jpg",
+		"width": 250,
+		"height": 250,
+		"pages": [
+			9
+		]
+	},
+	{
+		"page": 10,
+		"file": "p10-i1.jpg",
+		"width": 407,
+		"height": 491,
+		"pages": [
+			10
+		]
+	},
+	{
+		"page": 10,
+		"file": "p10-i2.jpg",
+		"width": 225,
+		"height": 300,
+		"pages": [
+			10
+		]
+	},
+	{
+		"page": 11,
+		"file": "p11-i1.jpg",
+		"width": 375,
+		"height": 500,
+		"pages": [
+			11
+		]
+	},
+	{
+		"page": 11,
+		"file": "p11-i2.jpg",
+		"width": 447,
+		"height": 447,
+		"pages": [
+			11
+		]
+	},
+	{
+		"page": 12,
+		"file": "p12-i1.jpg",
+		"width": 280,
+		"height": 320,
+		"pages": [
+			12
+		]
+	},
+	{
+		"page": 12,
+		"file": "p12-i2.jpg",
+		"width": 550,
+		"height": 550,
+		"pages": [
+			12
+		]
+	},
+	{
+		"page": 13,
+		"file": "p13-i1.jpg",
+		"width": 447,
+		"height": 447,
+		"pages": [
+			13
+		]
+	},
+	{
+		"page": 13,
+		"file": "p13-i2.jpg",
+		"width": 1040,
+		"height": 665,
+		"pages": [
+			13
+		]
+	},
+	{
+		"page": 14,
+		"file": "p14-i1.jpg",
+		"width": 922,
+		"height": 1000,
+		"pages": [
+			14
+		]
+	},
+	{
+		"page": 15,
+		"file": "p15-i1.jpg",
+		"width": 1000,
+		"height": 563,
+		"pages": [
+			15
+		]
+	},
+	{
+		"page": 15,
+		"file": "p15-i2.jpg",
+		"width": 449,
+		"height": 445,
+		"pages": [
+			15
+		]
+	},
+	{
+		"page": 16,
+		"file": "p16-i1.jpg",
+		"width": 768,
+		"height": 1024,
+		"pages": [
+			16
+		]
+	},
+	{
+		"page": 17,
+		"file": "p17-i1.jpg",
+		"width": 640,
+		"height": 480,
+		"pages": [
+			17
+		]
+	},
+	{
+		"page": 17,
+		"file": "p17-i2.jpg",
+		"width": 478,
+		"height": 642,
+		"pages": [
+			17
+		]
+	}
+]
