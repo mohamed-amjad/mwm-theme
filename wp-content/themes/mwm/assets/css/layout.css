@@ -477,6 +477,7 @@ body:not(.elementor-editor-active) :is(.mwm-section, .mwm-footer) {
 
 .mwm-has-hero .mwm-header:not(.is-scrolled) .mwm-nav a:hover,
 .mwm-has-hero .mwm-header:not(.is-scrolled) .mwm-nav .current-menu-item > a,
+.mwm-has-hero .mwm-header:not(.is-scrolled) .mwm-nav .current-menu-ancestor > a,
 .mwm-has-hero .mwm-header:not(.is-scrolled) .mwm-nav .current_page_item > a {
 	background: rgb(255 255 255 / .12);
 	color: #fff;
